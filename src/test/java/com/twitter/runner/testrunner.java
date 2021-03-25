@@ -19,7 +19,7 @@ import cucumber.api.testng.TestNGCucumberRunner;
 
 	@RunWith(Cucumber.class)
 	@CucumberOptions(features = {"src/main/java/com/twitter/features" }, glue = { "com/twitter/stepdefinations" }, 
-			tags = {"@tweets" },																											
+			tags = {"@all" },																											
 			monochrome = true,																								
 			dryRun = false,
 			

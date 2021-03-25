@@ -1,5 +1,5 @@
 @all
-Feature: Updating Profile Information
+Feature: Verifying tweets
 
 @tweets
 Scenario Outline: Updating profile picture
