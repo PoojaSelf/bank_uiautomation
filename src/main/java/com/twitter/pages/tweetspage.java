@@ -110,6 +110,8 @@ public class tweetspage extends datautil{
 	{
 		
 		int counter = 1;
+		int tweetsize=0;
+		String tweet;
 		
 		Map map=new HashMap();
 		Robot robot = new Robot();
@@ -139,10 +141,28 @@ public class tweetspage extends datautil{
 			{
 		//	System.out.println(alltweetlist.get(counter).getText());			
 			map.put(tweettime.getAttribute("datetime"), alltweetlist.get(counter).getText());
+			
+			tweetsize = alltweetlist.get(counter).getText().length();
+			tweet = alltweetlist.get(counter).getText();
+			System.out.println();
+			System.out.println("New Tweet");
+			int i=1;
+			if(tweetsize>10)
+			{	
+				
+			do{
+				System.out.println(i+"/1 "+tweet.substring(0, 10));
+				tweet = tweet.substring(10);
+				
+				tweetsize = tweet.length();
+				i++;
+			//	System.out.println(tweet);
+			}while(tweetsize>=10);
+			}
+			System.out.println(i+"/1 "+tweet);
 			}
 			counter++;
 		}
-		
 		
 		/*for(WebElement tweetlist : alltweetlist)
 		{
