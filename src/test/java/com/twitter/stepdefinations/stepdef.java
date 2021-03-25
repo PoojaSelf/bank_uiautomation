@@ -25,8 +25,6 @@ public class stepdef extends datautil{
 	@Given("^Enter valid \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void enter_valid_and(String username, String password) throws Throwable {
 		
-		
-		
 		waitForElement(login.getLoginButton(), 10000, "");
 	    login.getLoginButton().click();
 	    
@@ -155,12 +153,14 @@ public class stepdef extends datautil{
 		tweets.getSearchTB().sendKeys(name);
 		tweets.scrollToBottomOfSearchFrame();
 		tweets.getGotoTweeterpage().click();
+		String url = properties.getProperty("URL");
+		driver.navigate().to(url+name);
 	}
 
 	@When("^Retrive tweets for last (\\d+) hours$")
 	public void retrive_tweets_for_last_hours(int arg1) throws Throwable {
 		Thread.sleep(3000);
-		tweets.RetreiveTweets();
+		tweets.RetrieveTweets();
 	}
 
 	@Then("^Close browser$")

@@ -37,7 +37,7 @@ formatter.step({
 });
 formatter.step({
   "line": 8,
-  "name": "Go to Times Of India \"@timesofindia\" tweeter page",
+  "name": "Go to Times Of India \"timesofindia\" tweeter page",
   "keyword": "And "
 });
 formatter.step({
@@ -110,7 +110,7 @@ formatter.step({
 });
 formatter.step({
   "line": 8,
-  "name": "Go to Times Of India \"@timesofindia\" tweeter page",
+  "name": "Go to Times Of India \"timesofindia\" tweeter page",
   "keyword": "And "
 });
 formatter.step({
@@ -127,7 +127,7 @@ formatter.match({
   "location": "stepdef.go_to_website()"
 });
 formatter.result({
-  "duration": 5101927100,
+  "duration": 9674090400,
   "status": "passed"
 });
 formatter.match({
@@ -144,27 +144,27 @@ formatter.match({
   "location": "stepdef.enter_valid_and(String,String)"
 });
 formatter.result({
-  "duration": 2658167400,
+  "duration": 7677195101,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.click_submit()"
 });
 formatter.result({
-  "duration": 3906881200,
+  "duration": 1655325401,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "@timesofindia",
+      "val": "timesofindia",
       "offset": 22
     }
   ],
   "location": "stepdef.go_to_Times_Of_India_tweeter_page(String)"
 });
 formatter.result({
-  "duration": 3427935800,
+  "duration": 6697513700,
   "status": "passed"
 });
 formatter.match({
@@ -177,14 +177,14 @@ formatter.match({
   "location": "stepdef.retrive_tweets_for_last_hours(int)"
 });
 formatter.result({
-  "duration": 8371878500,
+  "duration": 9117382899,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.close_browser()"
 });
 formatter.result({
-  "duration": 1156428400,
+  "duration": 1604687501,
   "status": "passed"
 });
 });
