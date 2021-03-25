@@ -8,50 +8,56 @@ formatter.feature({
   "tags": [
     {
       "line": 1,
-      "name": "@tweets"
+      "name": "@all"
     }
   ]
 });
 formatter.scenarioOutline({
-  "line": 4,
+  "line": 5,
   "name": "Updating profile picture",
   "description": "",
   "id": "updating-profile-information;updating-profile-picture",
   "type": "scenario_outline",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 4,
+      "name": "@tweets"
+    }
+  ]
 });
 formatter.step({
-  "line": 5,
+  "line": 6,
   "name": "Go to website",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
+  "line": 7,
   "name": "Enter valid \"\u003cUsername\u003e\" and \"\u003cPassword\u003e\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
+  "line": 8,
   "name": "Click submit",
   "keyword": "And "
 });
 formatter.step({
-  "line": 8,
+  "line": 9,
   "name": "Go to Times Of India \"timesofindia\" tweeter page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
+  "line": 10,
   "name": "Retrive tweets for last 2 hours",
   "keyword": "When "
 });
 formatter.step({
-  "line": 10,
+  "line": 11,
   "name": "Close browser",
   "keyword": "And "
 });
 formatter.examples({
-  "line": 12,
+  "line": 13,
   "name": "",
   "description": "",
   "id": "updating-profile-information;updating-profile-picture;",
@@ -61,7 +67,7 @@ formatter.examples({
         "Username",
         "Password"
       ],
-      "line": 13,
+      "line": 14,
       "id": "updating-profile-information;updating-profile-picture;;1"
     },
     {
@@ -69,14 +75,14 @@ formatter.examples({
         "Pooja84315062",
         "Qwerty@123"
       ],
-      "line": 14,
+      "line": 15,
       "id": "updating-profile-information;updating-profile-picture;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 14,
+  "line": 15,
   "name": "Updating profile picture",
   "description": "",
   "id": "updating-profile-information;updating-profile-picture;;2",
@@ -85,17 +91,21 @@ formatter.scenario({
   "tags": [
     {
       "line": 1,
+      "name": "@all"
+    },
+    {
+      "line": 4,
       "name": "@tweets"
     }
   ]
 });
 formatter.step({
-  "line": 5,
+  "line": 6,
   "name": "Go to website",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
+  "line": 7,
   "name": "Enter valid \"Pooja84315062\" and \"Qwerty@123\"",
   "matchedColumns": [
     0,
@@ -104,22 +114,22 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
+  "line": 8,
   "name": "Click submit",
   "keyword": "And "
 });
 formatter.step({
-  "line": 8,
+  "line": 9,
   "name": "Go to Times Of India \"timesofindia\" tweeter page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
+  "line": 10,
   "name": "Retrive tweets for last 2 hours",
   "keyword": "When "
 });
 formatter.step({
-  "line": 10,
+  "line": 11,
   "name": "Close browser",
   "keyword": "And "
 });
@@ -127,7 +137,7 @@ formatter.match({
   "location": "stepdef.go_to_website()"
 });
 formatter.result({
-  "duration": 6583031400,
+  "duration": 5459064499,
   "status": "passed"
 });
 formatter.match({
@@ -144,14 +154,14 @@ formatter.match({
   "location": "stepdef.enter_valid_and(String,String)"
 });
 formatter.result({
-  "duration": 5786850300,
+  "duration": 5770379500,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.click_submit()"
 });
 formatter.result({
-  "duration": 1345049900,
+  "duration": 1334863300,
   "status": "passed"
 });
 formatter.match({
@@ -164,7 +174,7 @@ formatter.match({
   "location": "stepdef.go_to_Times_Of_India_tweeter_page(String)"
 });
 formatter.result({
-  "duration": 4032767499,
+  "duration": 4064832500,
   "status": "passed"
 });
 formatter.match({
@@ -177,14 +187,14 @@ formatter.match({
   "location": "stepdef.retrive_tweets_for_last_hours(int)"
 });
 formatter.result({
-  "duration": 8390053900,
+  "duration": 8310795800,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.close_browser()"
 });
 formatter.result({
-  "duration": 1277496201,
+  "duration": 1235517699,
   "status": "passed"
 });
 });

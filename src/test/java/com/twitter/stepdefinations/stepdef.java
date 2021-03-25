@@ -4,6 +4,7 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
@@ -152,7 +153,14 @@ public class stepdef extends datautil{
 		tweets.getSearchTB().click();
 		tweets.getSearchTB().sendKeys(name);
 		tweets.scrollToBottomOfSearchFrame();
+		try {
 		tweets.getGotoTweeterpage().click();
+		}
+		catch(StaleElementReferenceException e)
+		{
+		String url = properties.getProperty("URL");
+		driver.navigate().to(url+name);
+		}
 		String url = properties.getProperty("URL");
 		driver.navigate().to(url+name);
 	}

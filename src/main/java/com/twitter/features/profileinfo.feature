@@ -1,4 +1,4 @@
-@profile
+@all
 Feature: Updating Profile Information
 
 @profilephoto

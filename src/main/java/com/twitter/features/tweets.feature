@@ -1,6 +1,7 @@
-@tweets
+@all
 Feature: Updating Profile Information
 
+@tweets
 Scenario Outline: Updating profile picture
 Given Go to website
 Given Enter valid "<Username>" and "<Password>"

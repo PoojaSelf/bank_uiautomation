@@ -127,7 +127,7 @@ formatter.match({
   "location": "stepdef.go_to_website()"
 });
 formatter.result({
-  "duration": 9674090400,
+  "duration": 6583031400,
   "status": "passed"
 });
 formatter.match({
@@ -144,14 +144,14 @@ formatter.match({
   "location": "stepdef.enter_valid_and(String,String)"
 });
 formatter.result({
-  "duration": 7677195101,
+  "duration": 5786850300,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.click_submit()"
 });
 formatter.result({
-  "duration": 1655325401,
+  "duration": 1345049900,
   "status": "passed"
 });
 formatter.match({
@@ -164,7 +164,7 @@ formatter.match({
   "location": "stepdef.go_to_Times_Of_India_tweeter_page(String)"
 });
 formatter.result({
-  "duration": 6697513700,
+  "duration": 4032767499,
   "status": "passed"
 });
 formatter.match({
@@ -177,14 +177,14 @@ formatter.match({
   "location": "stepdef.retrive_tweets_for_last_hours(int)"
 });
 formatter.result({
-  "duration": 9117382899,
+  "duration": 8390053900,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.close_browser()"
 });
 formatter.result({
-  "duration": 1604687501,
+  "duration": 1277496201,
   "status": "passed"
 });
 });

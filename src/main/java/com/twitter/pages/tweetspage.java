@@ -3,9 +3,12 @@ package com.twitter.pages;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
+import java.time.ZoneOffset;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Date;
@@ -29,7 +32,7 @@ import com.twitter.commonutils.datautil;
 
 public class tweetspage extends datautil{
 
-	private static SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS");
+	private static DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
 	
 	//DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", Locale.ENGLISH);
 	
@@ -116,7 +119,7 @@ public class tweetspage extends datautil{
 		Map map=new HashMap();
 		Robot robot = new Robot();
 		
-		for(int i=0;i<30;i++)
+		for(int i=0;i<3;i++)
 		{
 		robot.keyPress(KeyEvent.VK_PAGE_DOWN);
 		robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
@@ -129,18 +132,17 @@ public class tweetspage extends datautil{
 		{
 			String datestring = tweettime.getAttribute("datetime").toString().replace("Z", "");
 		//	System.out.println(datestring);
-			String datenowstring = LocalDateTime.now().minusHours(2).toString().substring(0, 23);
+			String datenowstring = LocalDateTime.now(ZoneOffset.UTC).minusHours(2).toString().substring(0,19);
 		//	System.out.println(datenowstring);
 						
 			Date date =formatter.parse(datestring);
-		//	System.out.println(date);
-			Date datenow = formatter.parse(datenowstring);
-		//	System.out.println(datenow);
 			
-			if(date.before(datenow))
+			Date datenow = formatter.parse(datenowstring);
+			
+			if(date.after(datenow))
 			{
 		//	System.out.println(alltweetlist.get(counter).getText());			
-			map.put(tweettime.getAttribute("datetime"), alltweetlist.get(counter).getText());
+			map.put(date.toString().replace("IST ", "UTC "), alltweetlist.get(counter).getText());
 			
 			tweetsize = alltweetlist.get(counter).getText().length();
 			tweet = alltweetlist.get(counter).getText();
