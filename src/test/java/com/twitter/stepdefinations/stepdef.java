@@ -18,10 +18,16 @@ import cucumber.api.java.en.When;
 
 public class stepdef extends datautil{
 	
-	@Given("^Go to website$")
-	public void go_to_website() throws Throwable {
-		setUp();
-	}
+	 @Before
+	    public void beforeScenario(){
+	        setUp();
+	    } 
+	 
+	 @After
+	    public void afterScenario(){
+		 	driver.close();
+			driver.quit();
+	    }
 	
 	@Given("^Enter valid \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void enter_valid_and(String username, String password) throws Throwable {
@@ -165,17 +171,9 @@ public class stepdef extends datautil{
 		driver.navigate().to(url+name);
 	}
 
-	@When("^Retrive tweets for last (\\d+) hours$")
-	public void retrive_tweets_for_last_hours(int arg1) throws Throwable {
+	@When("^Retrive tweets for last (\\d+) hours and split it$")
+	public void retrive_tweets_for_last_hours_and_split_it(int arg1) throws Throwable {
 		Thread.sleep(3000);
 		tweets.RetrieveTweets();
 	}
-
-	@Then("^Close browser$")
-	public void close_browser() throws Throwable {
-	   
-		driver.close();
-		driver.quit();
-	}
-	
 }

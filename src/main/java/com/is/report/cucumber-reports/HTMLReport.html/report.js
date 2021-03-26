@@ -28,31 +28,21 @@ formatter.scenarioOutline({
 });
 formatter.step({
   "line": 6,
-  "name": "Go to website",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 7,
   "name": "Enter valid \"\u003cUsername\u003e\" and \"\u003cPassword\u003e\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 8,
+  "line": 7,
   "name": "Click submit",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
+  "line": 8,
   "name": "Verify if Home page is opened with \"\u003cUsername\u003e\"",
   "keyword": "Then "
 });
-formatter.step({
-  "line": 10,
-  "name": "Close browser",
-  "keyword": "And "
-});
 formatter.examples({
-  "line": 12,
+  "line": 10,
   "name": "",
   "description": "",
   "id": "validate-login;valid-login-function;",
@@ -62,7 +52,7 @@ formatter.examples({
         "Username",
         "Password"
       ],
-      "line": 13,
+      "line": 11,
       "id": "validate-login;valid-login-function;;1"
     },
     {
@@ -70,14 +60,18 @@ formatter.examples({
         "Pooja84315062",
         "Qwerty@123"
       ],
-      "line": 14,
+      "line": 12,
       "id": "validate-login;valid-login-function;;2"
     }
   ],
   "keyword": "Examples"
 });
+formatter.before({
+  "duration": 7902628600,
+  "status": "passed"
+});
 formatter.scenario({
-  "line": 14,
+  "line": 12,
   "name": "Valid login function",
   "description": "",
   "id": "validate-login;valid-login-function;;2",
@@ -96,11 +90,6 @@ formatter.scenario({
 });
 formatter.step({
   "line": 6,
-  "name": "Go to website",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 7,
   "name": "Enter valid \"Pooja84315062\" and \"Qwerty@123\"",
   "matchedColumns": [
     0,
@@ -109,29 +98,17 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "line": 8,
+  "line": 7,
   "name": "Click submit",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
+  "line": 8,
   "name": "Verify if Home page is opened with \"Pooja84315062\"",
   "matchedColumns": [
     0
   ],
   "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "Close browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdef.go_to_website()"
-});
-formatter.result({
-  "duration": 5349027800,
-  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -147,14 +124,14 @@ formatter.match({
   "location": "stepdef.enter_valid_and(String,String)"
 });
 formatter.result({
-  "duration": 5729172699,
+  "duration": 5644571100,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.click_submit()"
 });
 formatter.result({
-  "duration": 2381988501,
+  "duration": 1630389500,
   "status": "passed"
 });
 formatter.match({
@@ -167,18 +144,15 @@ formatter.match({
   "location": "stepdef.verify_if_Home_page_is_opened_with(String)"
 });
 formatter.result({
-  "duration": 6231582300,
+  "duration": 7074742400,
   "status": "passed"
 });
-formatter.match({
-  "location": "stepdef.close_browser()"
-});
-formatter.result({
-  "duration": 1039196599,
+formatter.after({
+  "duration": 2328321400,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 17,
+  "line": 15,
   "name": "Mandatory check to login function",
   "description": "",
   "id": "validate-login;mandatory-check-to-login-function",
@@ -186,38 +160,28 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 16,
+      "line": 14,
       "name": "@mandatory"
     }
   ]
 });
 formatter.step({
-  "line": 18,
-  "name": "Go to website",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 19,
+  "line": 16,
   "name": "Enter valid \"\u003cUsername\u003e\" and \"\u003cPassword\u003e\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 20,
+  "line": 17,
   "name": "Click submit",
   "keyword": "And "
 });
 formatter.step({
-  "line": 21,
+  "line": 18,
   "name": "Verify if Login Button is disabled",
   "keyword": "Then "
 });
-formatter.step({
-  "line": 22,
-  "name": "Close browser",
-  "keyword": "And "
-});
 formatter.examples({
-  "line": 24,
+  "line": 20,
   "name": "",
   "description": "",
   "id": "validate-login;mandatory-check-to-login-function;",
@@ -227,7 +191,7 @@ formatter.examples({
         "Username",
         "Password"
       ],
-      "line": 25,
+      "line": 21,
       "id": "validate-login;mandatory-check-to-login-function;;1"
     },
     {
@@ -235,7 +199,7 @@ formatter.examples({
         "",
         ""
       ],
-      "line": 26,
+      "line": 22,
       "id": "validate-login;mandatory-check-to-login-function;;2"
     },
     {
@@ -243,7 +207,7 @@ formatter.examples({
         "Pooja84315062",
         ""
       ],
-      "line": 27,
+      "line": 23,
       "id": "validate-login;mandatory-check-to-login-function;;3"
     },
     {
@@ -251,14 +215,18 @@ formatter.examples({
         "",
         "Qwerty@123"
       ],
-      "line": 28,
+      "line": 24,
       "id": "validate-login;mandatory-check-to-login-function;;4"
     }
   ],
   "keyword": "Examples"
 });
+formatter.before({
+  "duration": 5511312900,
+  "status": "passed"
+});
 formatter.scenario({
-  "line": 26,
+  "line": 22,
   "name": "Mandatory check to login function",
   "description": "",
   "id": "validate-login;mandatory-check-to-login-function;;2",
@@ -266,7 +234,7 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 16,
+      "line": 14,
       "name": "@mandatory"
     },
     {
@@ -276,12 +244,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 18,
-  "name": "Go to website",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 19,
+  "line": 16,
   "name": "Enter valid \"\" and \"\"",
   "matchedColumns": [
     0,
@@ -290,26 +253,14 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "line": 20,
+  "line": 17,
   "name": "Click submit",
   "keyword": "And "
 });
 formatter.step({
-  "line": 21,
+  "line": 18,
   "name": "Verify if Login Button is disabled",
   "keyword": "Then "
-});
-formatter.step({
-  "line": 22,
-  "name": "Close browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdef.go_to_website()"
-});
-formatter.result({
-  "duration": 4695600600,
-  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -325,32 +276,33 @@ formatter.match({
   "location": "stepdef.enter_valid_and(String,String)"
 });
 formatter.result({
-  "duration": 5495151200,
+  "duration": 7520648200,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.click_submit()"
 });
 formatter.result({
-  "duration": 46662000,
+  "duration": 183982800,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.verify_if_Login_Button_is_disabled()"
 });
 formatter.result({
-  "duration": 583050900,
+  "duration": 698849400,
   "status": "passed"
 });
-formatter.match({
-  "location": "stepdef.close_browser()"
+formatter.after({
+  "duration": 2732239300,
+  "status": "passed"
 });
-formatter.result({
-  "duration": 4691808600,
+formatter.before({
+  "duration": 6157400900,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 27,
+  "line": 23,
   "name": "Mandatory check to login function",
   "description": "",
   "id": "validate-login;mandatory-check-to-login-function;;3",
@@ -358,7 +310,7 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 16,
+      "line": 14,
       "name": "@mandatory"
     },
     {
@@ -368,12 +320,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 18,
-  "name": "Go to website",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 19,
+  "line": 16,
   "name": "Enter valid \"Pooja84315062\" and \"\"",
   "matchedColumns": [
     0,
@@ -382,26 +329,14 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "line": 20,
+  "line": 17,
   "name": "Click submit",
   "keyword": "And "
 });
 formatter.step({
-  "line": 21,
+  "line": 18,
   "name": "Verify if Login Button is disabled",
   "keyword": "Then "
-});
-formatter.step({
-  "line": 22,
-  "name": "Close browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdef.go_to_website()"
-});
-formatter.result({
-  "duration": 4222292801,
-  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -417,32 +352,33 @@ formatter.match({
   "location": "stepdef.enter_valid_and(String,String)"
 });
 formatter.result({
-  "duration": 5607284899,
+  "duration": 7200950200,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.click_submit()"
 });
 formatter.result({
-  "duration": 46665100,
+  "duration": 123033000,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.verify_if_Login_Button_is_disabled()"
 });
 formatter.result({
-  "duration": 588734500,
+  "duration": 714949000,
   "status": "passed"
 });
-formatter.match({
-  "location": "stepdef.close_browser()"
+formatter.after({
+  "duration": 1114263400,
+  "status": "passed"
 });
-formatter.result({
-  "duration": 4678017701,
+formatter.before({
+  "duration": 10993568700,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 28,
+  "line": 24,
   "name": "Mandatory check to login function",
   "description": "",
   "id": "validate-login;mandatory-check-to-login-function;;4",
@@ -450,7 +386,7 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 16,
+      "line": 14,
       "name": "@mandatory"
     },
     {
@@ -460,12 +396,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 18,
-  "name": "Go to website",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 19,
+  "line": 16,
   "name": "Enter valid \"\" and \"Qwerty@123\"",
   "matchedColumns": [
     0,
@@ -474,26 +405,14 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "line": 20,
+  "line": 17,
   "name": "Click submit",
   "keyword": "And "
 });
 formatter.step({
-  "line": 21,
+  "line": 18,
   "name": "Verify if Login Button is disabled",
   "keyword": "Then "
-});
-formatter.step({
-  "line": 22,
-  "name": "Close browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdef.go_to_website()"
-});
-formatter.result({
-  "duration": 4267164301,
-  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -509,28 +428,25 @@ formatter.match({
   "location": "stepdef.enter_valid_and(String,String)"
 });
 formatter.result({
-  "duration": 2446549300,
+  "duration": 2036715200,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.click_submit()"
 });
 formatter.result({
-  "duration": 48488600,
+  "duration": 110955800,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.verify_if_Login_Button_is_disabled()"
 });
 formatter.result({
-  "duration": 583662000,
+  "duration": 774852100,
   "status": "passed"
 });
-formatter.match({
-  "location": "stepdef.close_browser()"
-});
-formatter.result({
-  "duration": 4720295601,
+formatter.after({
+  "duration": 3145625800,
   "status": "passed"
 });
 formatter.uri("profileinfo.feature");
@@ -563,41 +479,31 @@ formatter.scenarioOutline({
 });
 formatter.step({
   "line": 6,
-  "name": "Go to website",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 7,
   "name": "Enter valid \"\u003cUsername\u003e\" and \"\u003cPassword\u003e\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 8,
+  "line": 7,
   "name": "Click submit",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
+  "line": 8,
   "name": "Go to Edit profile page of user \"\u003cUsername\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 10,
+  "line": 9,
   "name": "Update profile picture",
   "keyword": "When "
 });
 formatter.step({
-  "line": 11,
+  "line": 10,
   "name": "Verify if profile picture is updated",
   "keyword": "Then "
 });
-formatter.step({
-  "line": 12,
-  "name": "Close browser",
-  "keyword": "And "
-});
 formatter.examples({
-  "line": 14,
+  "line": 12,
   "name": "",
   "description": "",
   "id": "updating-profile-information;updating-profile-picture;",
@@ -607,7 +513,7 @@ formatter.examples({
         "Username",
         "Password"
       ],
-      "line": 15,
+      "line": 13,
       "id": "updating-profile-information;updating-profile-picture;;1"
     },
     {
@@ -615,14 +521,18 @@ formatter.examples({
         "Pooja84315062",
         "Qwerty@123"
       ],
-      "line": 16,
+      "line": 14,
       "id": "updating-profile-information;updating-profile-picture;;2"
     }
   ],
   "keyword": "Examples"
 });
+formatter.before({
+  "duration": 12027411800,
+  "status": "passed"
+});
 formatter.scenario({
-  "line": 16,
+  "line": 14,
   "name": "Updating profile picture",
   "description": "",
   "id": "updating-profile-information;updating-profile-picture;;2",
@@ -641,11 +551,6 @@ formatter.scenario({
 });
 formatter.step({
   "line": 6,
-  "name": "Go to website",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 7,
   "name": "Enter valid \"Pooja84315062\" and \"Qwerty@123\"",
   "matchedColumns": [
     0,
@@ -654,12 +559,12 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "line": 8,
+  "line": 7,
   "name": "Click submit",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
+  "line": 8,
   "name": "Go to Edit profile page of user \"Pooja84315062\"",
   "matchedColumns": [
     0
@@ -667,26 +572,14 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 10,
+  "line": 9,
   "name": "Update profile picture",
   "keyword": "When "
 });
 formatter.step({
-  "line": 11,
+  "line": 10,
   "name": "Verify if profile picture is updated",
   "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "Close browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdef.go_to_website()"
-});
-formatter.result({
-  "duration": 4221314500,
-  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -702,14 +595,14 @@ formatter.match({
   "location": "stepdef.enter_valid_and(String,String)"
 });
 formatter.result({
-  "duration": 6177975700,
+  "duration": 2204320000,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.click_submit()"
 });
 formatter.result({
-  "duration": 1293171200,
+  "duration": 1886450300,
   "status": "passed"
 });
 formatter.match({
@@ -722,32 +615,29 @@ formatter.match({
   "location": "stepdef.go_to_Edit_profile_page_of_user(String)"
 });
 formatter.result({
-  "duration": 5885336200,
+  "duration": 6596725200,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.update_profile_picture()"
 });
 formatter.result({
-  "duration": 13555892501,
+  "duration": 14043197900,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.verify_if_profile_picture_is_updated()"
 });
 formatter.result({
-  "duration": 73000,
+  "duration": 139400,
   "status": "passed"
 });
-formatter.match({
-  "location": "stepdef.close_browser()"
-});
-formatter.result({
-  "duration": 1110618299,
+formatter.after({
+  "duration": 1882990200,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 19,
+  "line": 17,
   "name": "Updating Bio",
   "description": "",
   "id": "updating-profile-information;updating-bio",
@@ -755,48 +645,38 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 18,
+      "line": 16,
       "name": "@bio"
     }
   ]
 });
 formatter.step({
-  "line": 20,
-  "name": "Go to website",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 21,
+  "line": 18,
   "name": "Enter valid \"\u003cUsername\u003e\" and \"\u003cPassword\u003e\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 22,
+  "line": 19,
   "name": "Click submit",
   "keyword": "And "
 });
 formatter.step({
-  "line": 23,
+  "line": 20,
   "name": "Go to Edit profile page of user \"\u003cUsername\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 24,
+  "line": 21,
   "name": "Update Bio",
   "keyword": "When "
 });
 formatter.step({
-  "line": 25,
+  "line": 22,
   "name": "Verify if Bio is updated",
   "keyword": "Then "
 });
-formatter.step({
-  "line": 26,
-  "name": "Close browser",
-  "keyword": "And "
-});
 formatter.examples({
-  "line": 28,
+  "line": 24,
   "name": "",
   "description": "",
   "id": "updating-profile-information;updating-bio;",
@@ -806,7 +686,7 @@ formatter.examples({
         "Username",
         "Password"
       ],
-      "line": 29,
+      "line": 25,
       "id": "updating-profile-information;updating-bio;;1"
     },
     {
@@ -814,14 +694,18 @@ formatter.examples({
         "Pooja84315062",
         "Qwerty@123"
       ],
-      "line": 30,
+      "line": 26,
       "id": "updating-profile-information;updating-bio;;2"
     }
   ],
   "keyword": "Examples"
 });
+formatter.before({
+  "duration": 6387959600,
+  "status": "passed"
+});
 formatter.scenario({
-  "line": 30,
+  "line": 26,
   "name": "Updating Bio",
   "description": "",
   "id": "updating-profile-information;updating-bio;;2",
@@ -829,7 +713,7 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 18,
+      "line": 16,
       "name": "@bio"
     },
     {
@@ -839,12 +723,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 20,
-  "name": "Go to website",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 21,
+  "line": 18,
   "name": "Enter valid \"Pooja84315062\" and \"Qwerty@123\"",
   "matchedColumns": [
     0,
@@ -853,12 +732,12 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "line": 22,
+  "line": 19,
   "name": "Click submit",
   "keyword": "And "
 });
 formatter.step({
-  "line": 23,
+  "line": 20,
   "name": "Go to Edit profile page of user \"Pooja84315062\"",
   "matchedColumns": [
     0
@@ -866,26 +745,14 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 24,
+  "line": 21,
   "name": "Update Bio",
   "keyword": "When "
 });
 formatter.step({
-  "line": 25,
+  "line": 22,
   "name": "Verify if Bio is updated",
   "keyword": "Then "
-});
-formatter.step({
-  "line": 26,
-  "name": "Close browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdef.go_to_website()"
-});
-formatter.result({
-  "duration": 6160845199,
-  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -901,14 +768,14 @@ formatter.match({
   "location": "stepdef.enter_valid_and(String,String)"
 });
 formatter.result({
-  "duration": 7536149901,
+  "duration": 5557211400,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.click_submit()"
 });
 formatter.result({
-  "duration": 1542005900,
+  "duration": 1884040500,
   "status": "passed"
 });
 formatter.match({
@@ -921,32 +788,29 @@ formatter.match({
   "location": "stepdef.go_to_Edit_profile_page_of_user(String)"
 });
 formatter.result({
-  "duration": 6322938201,
+  "duration": 7386438800,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.update_Bio()"
 });
 formatter.result({
-  "duration": 4713579800,
+  "duration": 6519832500,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.verify_if_Bio_is_updated()"
 });
 formatter.result({
-  "duration": 1282805100,
+  "duration": 2047746100,
   "status": "passed"
 });
-formatter.match({
-  "location": "stepdef.close_browser()"
-});
-formatter.result({
-  "duration": 1399426099,
+formatter.after({
+  "duration": 3219899800,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 34,
+  "line": 30,
   "name": "Updating Location",
   "description": "",
   "id": "updating-profile-information;updating-location",
@@ -954,48 +818,38 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 33,
+      "line": 29,
       "name": "@location"
     }
   ]
 });
 formatter.step({
-  "line": 35,
-  "name": "Go to website",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 36,
+  "line": 31,
   "name": "Enter valid \"\u003cUsername\u003e\" and \"\u003cPassword\u003e\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 37,
+  "line": 32,
   "name": "Click submit",
   "keyword": "And "
 });
 formatter.step({
-  "line": 38,
+  "line": 33,
   "name": "Go to Edit profile page of user \"\u003cUsername\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 39,
+  "line": 34,
   "name": "Update Location",
   "keyword": "When "
 });
 formatter.step({
-  "line": 40,
+  "line": 35,
   "name": "Verify if Location is updated",
   "keyword": "Then "
 });
-formatter.step({
-  "line": 41,
-  "name": "Close browser",
-  "keyword": "And "
-});
 formatter.examples({
-  "line": 43,
+  "line": 37,
   "name": "",
   "description": "",
   "id": "updating-profile-information;updating-location;",
@@ -1005,7 +859,7 @@ formatter.examples({
         "Username",
         "Password"
       ],
-      "line": 44,
+      "line": 38,
       "id": "updating-profile-information;updating-location;;1"
     },
     {
@@ -1013,14 +867,18 @@ formatter.examples({
         "Pooja84315062",
         "Qwerty@123"
       ],
-      "line": 45,
+      "line": 39,
       "id": "updating-profile-information;updating-location;;2"
     }
   ],
   "keyword": "Examples"
 });
+formatter.before({
+  "duration": 6253951800,
+  "status": "passed"
+});
 formatter.scenario({
-  "line": 45,
+  "line": 39,
   "name": "Updating Location",
   "description": "",
   "id": "updating-profile-information;updating-location;;2",
@@ -1028,7 +886,7 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 33,
+      "line": 29,
       "name": "@location"
     },
     {
@@ -1038,12 +896,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 35,
-  "name": "Go to website",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 36,
+  "line": 31,
   "name": "Enter valid \"Pooja84315062\" and \"Qwerty@123\"",
   "matchedColumns": [
     0,
@@ -1052,12 +905,12 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "line": 37,
+  "line": 32,
   "name": "Click submit",
   "keyword": "And "
 });
 formatter.step({
-  "line": 38,
+  "line": 33,
   "name": "Go to Edit profile page of user \"Pooja84315062\"",
   "matchedColumns": [
     0
@@ -1065,26 +918,14 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 39,
+  "line": 34,
   "name": "Update Location",
   "keyword": "When "
 });
 formatter.step({
-  "line": 40,
+  "line": 35,
   "name": "Verify if Location is updated",
   "keyword": "Then "
-});
-formatter.step({
-  "line": 41,
-  "name": "Close browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdef.go_to_website()"
-});
-formatter.result({
-  "duration": 5026660200,
-  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -1100,14 +941,14 @@ formatter.match({
   "location": "stepdef.enter_valid_and(String,String)"
 });
 formatter.result({
-  "duration": 5923054200,
+  "duration": 6328878400,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.click_submit()"
 });
 formatter.result({
-  "duration": 2441067799,
+  "duration": 1817304800,
   "status": "passed"
 });
 formatter.match({
@@ -1120,32 +961,29 @@ formatter.match({
   "location": "stepdef.go_to_Edit_profile_page_of_user(String)"
 });
 formatter.result({
-  "duration": 6433546001,
+  "duration": 6554792900,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.update_Location()"
 });
 formatter.result({
-  "duration": 5010222401,
+  "duration": 5937253000,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.verify_if_Location_is_updated()"
 });
 formatter.result({
-  "duration": 1291853800,
+  "duration": 2026810200,
   "status": "passed"
 });
-formatter.match({
-  "location": "stepdef.close_browser()"
-});
-formatter.result({
-  "duration": 4965785400,
+formatter.after({
+  "duration": 2694094000,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 48,
+  "line": 42,
   "name": "Updating Website",
   "description": "",
   "id": "updating-profile-information;updating-website",
@@ -1153,48 +991,38 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 47,
+      "line": 41,
       "name": "@website"
     }
   ]
 });
 formatter.step({
-  "line": 49,
-  "name": "Go to website",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 50,
+  "line": 43,
   "name": "Enter valid \"\u003cUsername\u003e\" and \"\u003cPassword\u003e\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 51,
+  "line": 44,
   "name": "Click submit",
   "keyword": "And "
 });
 formatter.step({
-  "line": 52,
+  "line": 45,
   "name": "Go to Edit profile page of user \"\u003cUsername\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 53,
+  "line": 46,
   "name": "Update Website",
   "keyword": "When "
 });
 formatter.step({
-  "line": 54,
+  "line": 47,
   "name": "Verify if Website is updated",
   "keyword": "Then "
 });
-formatter.step({
-  "line": 55,
-  "name": "Close browser",
-  "keyword": "And "
-});
 formatter.examples({
-  "line": 57,
+  "line": 49,
   "name": "",
   "description": "",
   "id": "updating-profile-information;updating-website;",
@@ -1204,7 +1032,7 @@ formatter.examples({
         "Username",
         "Password"
       ],
-      "line": 58,
+      "line": 50,
       "id": "updating-profile-information;updating-website;;1"
     },
     {
@@ -1212,14 +1040,18 @@ formatter.examples({
         "Pooja84315062",
         "Qwerty@123"
       ],
-      "line": 59,
+      "line": 51,
       "id": "updating-profile-information;updating-website;;2"
     }
   ],
   "keyword": "Examples"
 });
+formatter.before({
+  "duration": 6097920800,
+  "status": "passed"
+});
 formatter.scenario({
-  "line": 59,
+  "line": 51,
   "name": "Updating Website",
   "description": "",
   "id": "updating-profile-information;updating-website;;2",
@@ -1227,7 +1059,7 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 47,
+      "line": 41,
       "name": "@website"
     },
     {
@@ -1237,12 +1069,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 49,
-  "name": "Go to website",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 50,
+  "line": 43,
   "name": "Enter valid \"Pooja84315062\" and \"Qwerty@123\"",
   "matchedColumns": [
     0,
@@ -1251,12 +1078,12 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "line": 51,
+  "line": 44,
   "name": "Click submit",
   "keyword": "And "
 });
 formatter.step({
-  "line": 52,
+  "line": 45,
   "name": "Go to Edit profile page of user \"Pooja84315062\"",
   "matchedColumns": [
     0
@@ -1264,26 +1091,14 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 53,
+  "line": 46,
   "name": "Update Website",
   "keyword": "When "
 });
 formatter.step({
-  "line": 54,
+  "line": 47,
   "name": "Verify if Website is updated",
   "keyword": "Then "
-});
-formatter.step({
-  "line": 55,
-  "name": "Close browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdef.go_to_website()"
-});
-formatter.result({
-  "duration": 4835423600,
-  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -1299,14 +1114,14 @@ formatter.match({
   "location": "stepdef.enter_valid_and(String,String)"
 });
 formatter.result({
-  "duration": 5484327800,
+  "duration": 6312878800,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.click_submit()"
 });
 formatter.result({
-  "duration": 1732449000,
+  "duration": 2153937200,
   "status": "passed"
 });
 formatter.match({
@@ -1319,28 +1134,25 @@ formatter.match({
   "location": "stepdef.go_to_Edit_profile_page_of_user(String)"
 });
 formatter.result({
-  "duration": 5807813100,
+  "duration": 6714721000,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.update_Website()"
 });
 formatter.result({
-  "duration": 5525234201,
+  "duration": 6020286000,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.verify_if_Website_is_updated()"
 });
 formatter.result({
-  "duration": 1325461899,
+  "duration": 1868666300,
   "status": "passed"
 });
-formatter.match({
-  "location": "stepdef.close_browser()"
-});
-formatter.result({
-  "duration": 2235585801,
+formatter.after({
+  "duration": 1561638400,
   "status": "passed"
 });
 formatter.uri("tweets.feature");
@@ -1359,9 +1171,9 @@ formatter.feature({
 });
 formatter.scenarioOutline({
   "line": 5,
-  "name": "Updating profile picture",
+  "name": "Retriving tweets and splitting it",
   "description": "",
-  "id": "verifying-tweets;updating-profile-picture",
+  "id": "verifying-tweets;retriving-tweets-and-splitting-it",
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
@@ -1373,64 +1185,58 @@ formatter.scenarioOutline({
 });
 formatter.step({
   "line": 6,
-  "name": "Go to website",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 7,
   "name": "Enter valid \"\u003cUsername\u003e\" and \"\u003cPassword\u003e\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 8,
+  "line": 7,
   "name": "Click submit",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
+  "line": 8,
   "name": "Go to Times Of India \"timesofindia\" tweeter page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 10,
-  "name": "Retrive tweets for last 2 hours",
+  "line": 9,
+  "name": "Retrive tweets for last 2 hours and split it",
   "keyword": "When "
 });
-formatter.step({
-  "line": 11,
-  "name": "Close browser",
-  "keyword": "And "
-});
 formatter.examples({
-  "line": 13,
+  "line": 11,
   "name": "",
   "description": "",
-  "id": "verifying-tweets;updating-profile-picture;",
+  "id": "verifying-tweets;retriving-tweets-and-splitting-it;",
   "rows": [
     {
       "cells": [
         "Username",
         "Password"
       ],
-      "line": 14,
-      "id": "verifying-tweets;updating-profile-picture;;1"
+      "line": 12,
+      "id": "verifying-tweets;retriving-tweets-and-splitting-it;;1"
     },
     {
       "cells": [
         "Pooja84315062",
         "Qwerty@123"
       ],
-      "line": 15,
-      "id": "verifying-tweets;updating-profile-picture;;2"
+      "line": 13,
+      "id": "verifying-tweets;retriving-tweets-and-splitting-it;;2"
     }
   ],
   "keyword": "Examples"
 });
+formatter.before({
+  "duration": 7302446000,
+  "status": "passed"
+});
 formatter.scenario({
-  "line": 15,
-  "name": "Updating profile picture",
+  "line": 13,
+  "name": "Retriving tweets and splitting it",
   "description": "",
-  "id": "verifying-tweets;updating-profile-picture;;2",
+  "id": "verifying-tweets;retriving-tweets-and-splitting-it;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -1446,11 +1252,6 @@ formatter.scenario({
 });
 formatter.step({
   "line": 6,
-  "name": "Go to website",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 7,
   "name": "Enter valid \"Pooja84315062\" and \"Qwerty@123\"",
   "matchedColumns": [
     0,
@@ -1459,31 +1260,19 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "line": 8,
+  "line": 7,
   "name": "Click submit",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
+  "line": 8,
   "name": "Go to Times Of India \"timesofindia\" tweeter page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 10,
-  "name": "Retrive tweets for last 2 hours",
+  "line": 9,
+  "name": "Retrive tweets for last 2 hours and split it",
   "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "Close browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdef.go_to_website()"
-});
-formatter.result({
-  "duration": 4735315700,
-  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -1499,14 +1288,14 @@ formatter.match({
   "location": "stepdef.enter_valid_and(String,String)"
 });
 formatter.result({
-  "duration": 5114590000,
+  "duration": 7592555200,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdef.click_submit()"
 });
 formatter.result({
-  "duration": 4364384899,
+  "duration": 2032235700,
   "status": "passed"
 });
 formatter.match({
@@ -1519,27 +1308,15 @@ formatter.match({
   "location": "stepdef.go_to_Times_Of_India_tweeter_page(String)"
 });
 formatter.result({
-  "duration": 3087637599,
+  "duration": 6730434300,
   "status": "passed"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "2",
-      "offset": 24
-    }
-  ],
-  "location": "stepdef.retrive_tweets_for_last_hours(int)"
-});
+formatter.match({});
 formatter.result({
-  "duration": 8242813300,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "stepdef.close_browser()"
-});
-formatter.result({
-  "duration": 1193938000,
+formatter.after({
+  "duration": 1991560000,
   "status": "passed"
 });
 });

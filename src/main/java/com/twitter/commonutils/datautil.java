@@ -28,11 +28,11 @@ public class datautil {
 	
 	public static WebDriver driver;
 	public static Properties properties;
-	public loginpage login;
-	public profilepage profile;
-	public tweetspage tweets;
+	public static loginpage login;
+	public static profilepage profile;
+	public static tweetspage tweets;
 	
-	public void setUp() {
+	public static void setUp() {
 		
 		WebDriverManager.chromedriver().version("89").setup();
 		driver = new ChromeDriver();
@@ -65,7 +65,7 @@ public class datautil {
 	}
 	
 	
-	private void initializePageFactory() {
+	private static void initializePageFactory() {
 		
 	login = PageFactory.initElements(driver, loginpage.class);
 	profile = PageFactory.initElements(driver, profilepage.class);	
@@ -73,13 +73,13 @@ public class datautil {
 	
 	}
 	
-	public void loadTestData() {
+	public static void loadTestData() {
 		
 		properties = loadResource(properties, "testdata"+File.separator+"testdata.properties");
 		
 	}
 	
-	public Properties loadResource(Properties prop, String resourceName) {
+	public static Properties loadResource(Properties prop, String resourceName) {
 		ClassLoader classloader = Thread.currentThread().getContextClassLoader();
 		InputStream inputStream = classloader.getResourceAsStream(resourceName);
 		try {

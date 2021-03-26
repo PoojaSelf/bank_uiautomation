@@ -129,7 +129,8 @@ public class tweetspage extends datautil{
 		ArrayList <WebElement> alltweettime = (ArrayList<WebElement>) driver.findElements(By.cssSelector("div[data-testid='tweet'] time"));
 		
 		for(WebElement tweettime : alltweettime)
-		{
+			try{
+				{
 			String datestring = tweettime.getAttribute("datetime").toString().replace("Z", "");
 		//	System.out.println(datestring);
 			String datenowstring = LocalDateTime.now(ZoneOffset.UTC).minusHours(2).toString().substring(0,19);
@@ -149,21 +150,26 @@ public class tweetspage extends datautil{
 			System.out.println();
 			System.out.println("New Tweet");
 			int i=1;
-			if(tweetsize>10)
+			if(tweetsize>50)
 			{	
 				
 			do{
-				System.out.println(i+"/1 "+tweet.substring(0, 10));
-				tweet = tweet.substring(10);
+				System.out.println(i+"/1 "+tweet.substring(0, 50));
+				tweet = tweet.substring(50);
 				
 				tweetsize = tweet.length();
 				i++;
 			//	System.out.println(tweet);
-			}while(tweetsize>=10);
+			}while(tweetsize>=50);
 			}
 			System.out.println(i+"/1 "+tweet);
 			}
 			counter++;
+		}
+		}catch(IndexOutOfBoundsException e)
+		{
+			break;
+			
 		}
 		
 		/*for(WebElement tweetlist : alltweetlist)
